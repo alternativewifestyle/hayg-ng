@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html ng-app="HollaAt">
+
+<head lang="en">
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="styles/main.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">  <title>Holla @ Yo Gurl</title>
+</head>
+
+<body>
+  <div class="logo">
+    <h1>Holla @ Yo Gurl</h1></div>
+<nav class="navbar">
+<div class="nav-overlay">
+<div ng-include="'templates/navigation-items.html'"></div>
+</div>
+</nav>
+<ng-view id=""></ng-view>
+<footer>
+  <div class="nav-overlay">
+<div ng-include="'templates/navigation-items.html'"></div>
+  </div>
+</footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.4.2/angular-ui-router.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
+<script src="scripts/app.js"></script>
+
+</body>
+
+</html>
