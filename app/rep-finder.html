@@ -8,26 +8,18 @@
  <title>Holla @ Yo Gurl</title>
 </head>
 
-<body ng-app="hollaAt">
+<body ng-app="hollaAt" ng-controller="chooseCtrl">
   <div id="rep-nav">
     <div id="nav-style-box">
       <form>
 
-        <select id="choose-state">
-    <option value="not a state">Choose a State</option>
-<option value="alabama">Alabama</option>
-<option value="alaska">Alaska</option>
-<option value="arizona">Arizona</option>
-<option value="arkansas">Arkansas</option>
-<option value="california">California</option>
-<option value="colorado">Colorado</option>
+        <select ng-model="selectedRep" ng-options="x for (x,y) in reps">
   </select>
 
         <button type="button" id="get-it">Get it, gurl!</button>
       </form>
     </div>
   </div>
-
   <div class="ret-style-box" ng-controller="voteCtrl">
     <div class="sel-ret">
       <div class="bio-pic-box">
